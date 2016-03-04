@@ -7,6 +7,34 @@ This bundle integrates [Guzzle 3](http://guzzle3.readthedocs.org/) into your Sym
 
 It can also integrate with the [JMSSerializerBundle](http://jmsyst.com/bundles/JMSSerializerBundle) for easy object (de)serialization, and provides a param converter for use with the [SensioFrameworkExtraBundle](http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/).
 
+Symfony 3 support
+-----------------
+
+Add to yout composer.json:
+
+```
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nullziu/guzzle-bundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/nullziu/guzzle3"
+        }
+    ],
+```
+
+Override guzzle dependency:
+```
+    "require": {
+        "misd/guzzle-bundle": "dev-symfony3-compatible as v1.2.0",
+        "guzzle/guzzle": "dev-symfony3-compatible as v3.10.0"
+    },
+
+```
+
+
 Authors
 -------
 
